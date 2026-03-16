@@ -8,35 +8,36 @@ The repository contains the implementation of three defense methods:
 
 - **Naive Detection** – Direct safety evaluation of the full plan using an LLM  
 - **Object Filtering** – Reduces the world state to objects relevant to the plan  
-- **PROTEA (External Memory)** – Our proposed defense that maintains an evolving world state and evaluates actions sequentially
+- **PROTEA** – Our proposed defense that maintains an evolving world state and evaluates actions sequentially
 
 These methods evaluate whether a task plan generated for a robot contains **harmful or malicious actions**.
 
-The evaluation is performed on the **HarmPlan dataset**, which contains both benign and malicious task plans built from the VirtualHome environment.
+The evaluation is performed on the **HarmPlan dataset**, which contains both benign and malicious task plans built from the VirtualHome dataset.
 
 ---
 
-# Repository Structure
 
-PROTEA/
-│
+If your actual repo name is `defense_protea`, you can also make it match exactly:
+
+```markdown
+## Repository Structure
+
+```text
+defense_protea/
 ├── README.md
-│
+├── .gitignore
 ├── dataset/
 │   └── harmplan/
 │       ├── benign/
 │       └── malicious/
-│
 └── scripts/
-    ├── naive_detection_with_LLM.py
-    ├── object_filtering_detection.py
-    ├── external_memory_detection.py
-    │
+    ├── naive_method.py
+    ├── object_filtering_method.py
+    ├── protea.py
     └── utils/
         ├── __init__.py
         ├── object_filter.py
         └── parse_graph.py
-
 # Dataset
 
 The **HarmPlan dataset** used in our experiments is included in this repository.
