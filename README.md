@@ -22,7 +22,7 @@ defense_protea/
 ├── README.md
 ├── .gitignore
 ├── dataset/
-│   └── harmplan/
+│   └── harmplan_dataset/
 │       ├── benign/
 │       └── malicious/
 └── scripts/
