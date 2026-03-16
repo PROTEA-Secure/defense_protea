@@ -15,14 +15,9 @@ These methods evaluate whether a task plan generated for a robot contains **harm
 The evaluation is performed on the **HarmPlan dataset**, which contains both benign and malicious task plans built from the VirtualHome dataset.
 
 ---
-
-
-If your actual repo name is `defense_protea`, you can also make it match exactly:
-
-```markdown
 ## Repository Structure
 
-```text
+```
 defense_protea/
 ├── README.md
 ├── .gitignore
@@ -38,6 +33,8 @@ defense_protea/
         ├── __init__.py
         ├── object_filter.py
         └── parse_graph.py
+```
+
 # Dataset
 
 The **HarmPlan dataset** used in our experiments is included in this repository.
